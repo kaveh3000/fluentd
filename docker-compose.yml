@@ -9,5 +9,5 @@ services:
 volumes:
   fluentd-log:
 networks:
-  fluentd:
+  fluentd-net:
     name: fluentd-net
