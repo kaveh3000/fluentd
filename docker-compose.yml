@@ -1,0 +1,13 @@
+version: "2.2"
+services:
+  fluentd:
+    image: fluent/fluentd:v1.11-1
+    volumes:
+      - fluentd-log:/fluentd/log
+    networks:
+      - fluentd-net
+volumes:
+  fluentd-log:
+networks:
+  fluentd:
+    name: fluentd-net
